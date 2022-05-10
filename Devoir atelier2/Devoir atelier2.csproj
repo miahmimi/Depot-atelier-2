@@ -33,6 +33,9 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="MySql.Data">
+      <HintPath>..\..\..\..\Downloads\mysql.data\MySql.Data.dll</HintPath>
+    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
     <Reference Include="System.Xml.Linq" />
@@ -46,14 +49,32 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Form1.cs">
+    <Compile Include="Class1.cs" />
+    <Compile Include="Connexion\Singleton.cs" />
+    <Compile Include="dal\Class1.cs" />
+    <Compile Include="VUE\Authentification.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Form1.Designer.cs">
-      <DependentUpon>Form1.cs</DependentUpon>
+    <Compile Include="VUE\Authentification.Designer.cs">
+      <DependentUpon>Authentification.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="VUE\Ajout.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="VUE\Ajout.Designer.cs">
+      <DependentUpon>Ajout.cs</DependentUpon>
+    </Compile>
+    <Compile Include="VUE\Liste.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="VUE\Liste.Designer.cs">
+      <DependentUpon>Liste.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="VUE\Authentification.resx">
+      <DependentUpon>Authentification.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
@@ -63,6 +84,12 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="VUE\Ajout.resx">
+      <DependentUpon>Ajout.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="VUE\Liste.resx">
+      <DependentUpon>Liste.cs</DependentUpon>
+    </EmbeddedResource>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
@@ -79,7 +106,6 @@
   <ItemGroup>
     <Folder Include="CONTROLE\" />
     <Folder Include="MODELE\" />
-    <Folder Include="VUE\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
