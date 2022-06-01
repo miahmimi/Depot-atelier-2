@@ -47,7 +47,7 @@ namespace Devoir_atelier2.VUE
             // 
             this.lblListe.AutoSize = true;
             this.lblListe.Font = new System.Drawing.Font("Microsoft PhagsPa", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblListe.Location = new System.Drawing.Point(12, 9);
+            this.lblListe.Location = new System.Drawing.Point(12, 19);
             this.lblListe.Name = "lblListe";
             this.lblListe.Size = new System.Drawing.Size(197, 31);
             this.lblListe.TabIndex = 0;
@@ -157,6 +157,7 @@ namespace Devoir_atelier2.VUE
             this.Name = "Liste";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Liste";
+            this.Load += new System.EventHandler(this.Liste_Load);
             ((System.ComponentModel.ISupportInitialize)(this.Listeperso)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();

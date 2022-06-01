@@ -39,9 +39,9 @@ namespace Devoir_atelier2
             // 
             // btnValiderconnec
             // 
-            this.btnValiderconnec.Location = new System.Drawing.Point(135, 237);
+            this.btnValiderconnec.Location = new System.Drawing.Point(363, 230);
             this.btnValiderconnec.Name = "btnValiderconnec";
-            this.btnValiderconnec.Size = new System.Drawing.Size(75, 23);
+            this.btnValiderconnec.Size = new System.Drawing.Size(106, 37);
             this.btnValiderconnec.TabIndex = 11;
             this.btnValiderconnec.Text = "Valider";
             this.btnValiderconnec.UseVisualStyleBackColor = true;
@@ -50,43 +50,45 @@ namespace Devoir_atelier2
             // lblConnec
             // 
             this.lblConnec.AutoSize = true;
-            this.lblConnec.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblConnec.Location = new System.Drawing.Point(61, 28);
+            this.lblConnec.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblConnec.Location = new System.Drawing.Point(161, 23);
             this.lblConnec.Name = "lblConnec";
-            this.lblConnec.Size = new System.Drawing.Size(137, 24);
+            this.lblConnec.Size = new System.Drawing.Size(175, 29);
             this.lblConnec.TabIndex = 10;
             this.lblConnec.Text = "Authentification";
             // 
             // lblPwr
             // 
             this.lblPwr.AutoSize = true;
-            this.lblPwr.Location = new System.Drawing.Point(21, 156);
+            this.lblPwr.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblPwr.Location = new System.Drawing.Point(105, 156);
             this.lblPwr.Name = "lblPwr";
-            this.lblPwr.Size = new System.Drawing.Size(93, 17);
+            this.lblPwr.Size = new System.Drawing.Size(110, 20);
             this.lblPwr.TabIndex = 9;
             this.lblPwr.Text = "Mot de passe";
             // 
             // lblLogin
             // 
             this.lblLogin.AutoSize = true;
-            this.lblLogin.Location = new System.Drawing.Point(21, 77);
+            this.lblLogin.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblLogin.Location = new System.Drawing.Point(114, 72);
             this.lblLogin.Name = "lblLogin";
-            this.lblLogin.Size = new System.Drawing.Size(43, 17);
+            this.lblLogin.Size = new System.Drawing.Size(50, 20);
             this.lblLogin.TabIndex = 8;
             this.lblLogin.Text = "Login";
             // 
             // txtPwr
             // 
-            this.txtPwr.Location = new System.Drawing.Point(24, 185);
+            this.txtPwr.Location = new System.Drawing.Point(109, 188);
             this.txtPwr.Name = "txtPwr";
-            this.txtPwr.Size = new System.Drawing.Size(186, 22);
+            this.txtPwr.Size = new System.Drawing.Size(262, 22);
             this.txtPwr.TabIndex = 7;
             // 
             // txtLogin
             // 
-            this.txtLogin.Location = new System.Drawing.Point(24, 97);
+            this.txtLogin.Location = new System.Drawing.Point(109, 95);
             this.txtLogin.Name = "txtLogin";
-            this.txtLogin.Size = new System.Drawing.Size(186, 22);
+            this.txtLogin.Size = new System.Drawing.Size(262, 22);
             this.txtLogin.TabIndex = 6;
             this.txtLogin.TextChanged += new System.EventHandler(this.txtLogin_TextChanged);
             // 
@@ -94,7 +96,7 @@ namespace Devoir_atelier2
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(260, 285);
+            this.ClientSize = new System.Drawing.Size(478, 279);
             this.Controls.Add(this.btnValiderconnec);
             this.Controls.Add(this.lblConnec);
             this.Controls.Add(this.lblPwr);
